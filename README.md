@@ -228,7 +228,7 @@ data-warehouse-project/
 │   ├── gold.dim_products
 │   ├── gold.fact_sales
 
-\`\`\`  
+```  
 \---
 
 ## License
