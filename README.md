@@ -9,11 +9,9 @@ Welcome to the **EDA Bike Project** repository!
 
 Perform EDA (Exploratory Data Analysis to derive business insights that will be used to ultimately create a business dashboard (in “Third entry: Bike Dashboard Project)\*
 
-<br>
 
 ###### \*Reference “Project Background” section
 
-<br>
 
 #### **Project Specifications**
 
@@ -26,7 +24,6 @@ Data Sources
 
 ###### \*\*Reference “Project Background” section
 
-<br>
 
 Skills Employed
 
@@ -34,7 +31,6 @@ Skills Employed
 - SQL Coding
 - AI Prompt Engineering (for verification purposes)
 
-<br>
 
 ## 🛠️ Project Background
 
