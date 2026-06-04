@@ -205,7 +205,7 @@ Scenarios:
 <br>
 
 ## 📂 Repository Structure
-
+```
 data-warehouse-project/  
 │  
 ├── source documents/                                      # Raw datasets used for the project
