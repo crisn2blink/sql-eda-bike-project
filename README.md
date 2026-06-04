@@ -3,94 +3,234 @@ Welcome to the **EDA Bike Project** repository!
   This project demonstrates a comprehensive approach to EDA; from simple tasks dealing with categorical analysis to more complex operations such as part-to-whole analysis, cumulative running averages and product-performance analysis. Designed as a portfolio project that highlights industry best practices for data analysis.
 
 ---
-  ## 📖 Project Overview
-  
-  This project involves:
-  
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
+## **📖 Project Overview**
 
-🎯 This repository is an excellent resource for professionals and students looking to showcase expertise in:
-  - SQL Development
-- Data Architect
-- Data Engineering  
-- ETL Pipeline Developer  
-- Data Modeling  
-- Data Analytics  
+#### **Objective of Project**
 
----
-  
-  ## 🛠️ Important Links & Tools:
-  
-  Everything is for Free!
-  - **[Datasets](datasets/):** Access to the project dataset (csv files).
+Perform EDA (Exploratory Data Analysis to derive business insights that will be used to ultimately create a business dashboard (in “Third entry: Bike Dashboard Project)\*
 
----
-  
-  ## Project Requirements
-  
-  ### Building the Data Warehouse (Data Engineering)
-  
-  ### Objective
-  Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
+<br>
 
-#### Specifications
-- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**:  Focus on the latest dataset only; historization of data is not required.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+###### \*Reference “Project Background” section
 
+<br>
 
----
-  
-  ### BI: Analytics & Reporting (Data Analytics)
-  
-  #### Obejective
-  Develop SQL-based analytics to deliver detailed insights into:
-  - **Customer Behavior**
-  - **Product Performance**
-  - **Sales Trends**
-  
-  These insights empower stakeholders with key business metrics, enabling strategic decision-making.
+#### **Project Specifications**
 
-For more details, refer to [docs/requirements.md](docs/requirements.md).
+Data Sources
+
+- SQL Views
+    - The views used to perform the EDA are those created from “First entry: Bike Data Warehouse Project”\*\*
+
+<br>
+
+###### \*\*Reference “Project Background” section
+
+<br>
+
+Skills Employed
+
+- Data Analytics
+- SQL Coding
+- AI Prompt Engineering (for verification purposes)
+
+<br>
+
+## 🛠️ Project Background
+
+This project (Bike EDA Project) conforms one of three entries that make up the overall “Bike Project”.
+
+- First entry: Bike Data Warehouse Project (not included in this repository)
+- Second entry: Bike EDA Project (covered by this repository)
+    - **This entire repository deals with only this first entry**
+- Third entry: Bike Dashboard Project (not included in this repository/separate repository)
+
+<br>
+
+The aim of all three entries of the Bike Project is to go through the entirety of the data lifecycle from the very start of aggregating the data to ultimately presenting business insights derived from our data in an organized and structured dashboard. The aim of the dashboard being to provide business insights to the stakeholders of the Bike company.
+
+<br>
+
+## 🎯 EDA Analysis Breakdown
+
+1. #### **Dimension Exploration:** Understanding the granularity of our dimensions as well as the hierarchical layers.
+    - Identify the unique values (or categories) in each dimension
+    - Recognizing how data might be grouped or segmented, which is useful for later analysis
+
+<br>
+
+2. **Date Exploration**: Find the dates for the range of orders
+    - Identify the earliest and latest dates (boundaries)
+    - Understand the time-span
+
+<br>
+
+Syntax:
+
+MIN/MAX \[date dimensions\]
+
+<br>
+
+3. #### **Measure Exploration**
+    - Calculate and find out the key metrics of our business (Big Numbers)
+    - Highest level of aggregation/lowest level of details
+
+<br>
+
+Examples:
+
+- SUM(Sales)
+- AVG(price)
+- SUM(quantity)
+- COUNT(DISTINCT customer\_key)
+
+<br>
+
+4. #### **Magnitude Analysis**: Aggregations are performed and then grouped by specific dimensions.
+    - Here we will start putting things together and really begin our analysis (this is basic).
+    - Magnitude analysis is comparing the measure values **by categories**.
+    - Helps us to understand the importance of different categories.
+
+<br>
+
+Scenarios:
+
+- Total sales by country
+- Total quantity by category
+- Average price by products
+- Total orders by customers
+
+<br>
+
+5. #### **Ranking Analysis**
+    - Order the values and dimensions by measures
+    - Top performers|Bottom performers
+
+<br>
+
+Examples:
+
+- RANK \[dimension\] by \[measure\]
+- RANK countries by total\_sales
+- TOP 5 products by quantity
+- BOTTOM 3 customers by total\_sales
+
+<br>
+
+6. #### **Change Over Time**  
+    - Technique to analyze how a measure evolves over time
+    - Helps to track trends and identify seasonality
+
+<br>
+
+Scenarios:
+
+- Total sales by year
+- Average cost by month
+
+<br>
+
+7. #### **Cumulative Analysis**: Running total & Moving Average
+    - Used to aggregate the data progressively across time
+    - Helps to understand whether our business is growing or declining
+    - Very similar to change over time but cumulative
+
+<br>
+
+Case Use:
+
+- Aggregate \[cumulative measure\] By \[date dimension\]
+
+<br>
+
+8. #### **Performance Analysis (YoY Analysis)**:
+    - #### Process of comparing the current value with a target value. 
+
+<br>
+
+Case Use:
+
+- Current\[measure\] - Target\[measure\]
+
+<br>
+
+Scenarios:
+
+- Current sales - Average sales
+- Current year sales - previous year sales
+- Current sales - lowest sales
+- Highest sales - Current sales
+
+<br>
+
+9. #### **Part-to-Whole Analysis**
+    - Proportional Analysis: Analyze how an individual part is performing compared to the overall, allowing us to understand which category has the greatest impact on the business.
+
+<br>
+
+Case Use:  
+
+- (\[measure\]/Total \[measure\]) \* 100 BY \[dimension\]
+
+<br>
+
+Examples:
+
+- (Sales/Total Sales) \* 100 By Category
+- (Quantity/Total Quantity) \* 100 By Country
+
+<br>
+
+10. #### **Data Segmentation Analysis**:
+    - Group the data based on a specific range
+    - Helps to understand the correlation between two measures
+
+<br>
+
+Case Use:
+
+- \[Measure\] by \[Measure\]
+
+<br>
+
+Scenarios:
+
+- Total products By Sales Range
+- Total customers By Age
+
+<br>
 
 ## 📂 Repository Structure
-```
-data-warehouse-project/
-  │
-├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
-  │
-├── docs/                               # Project documentation and architecture details
-  │   ├── project_diagram.drawio          # Draw.io file shows the project's architecture
-│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow_diagram.drawio        # Draw.io file for the data flow diagram
-│   ├── sales_data_mart.drawio          # Draw.io file for data models (star schema)
-│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
-│
-├── scripts/                            # SQL scripts for ETL and transformations
-  │   ├── bronze/                         # Scripts for extracting and loading raw data
-  │   ├── silver/                         # Scripts for cleaning and transforming data
-  │   ├── gold/                           # Scripts for creating analytical models
-  │
-├── tests/                              # Test scripts and quality files
-  │
-├── README.md                           # Project overview and instructions
-├── LICENSE                             # License information for the repository
-├── .gitignore                          # Files and directories to be ignored by Git
-└── requirements.txt                    # Dependencies and requirements for the project
-```
----
-  
-  ---
-  
-  ## License
-  
-  This project is licensed under the [MIT License] (LICENSE). You are free to use, modify and share this project with proper attribution.
+
+data-warehouse-project/  
+│  
+├── datasets/                                      # Raw datasets used for the project (ERP and CRM data)  
+│  
+├── docs/                                                      # Project documentation and architecture details  
+│   ├── project\_diagram.drawio             # Draw.io file shows the project's architecture  
+│   ├── [data\_catalog.md](https://data_catalog.md "https://data_catalog.md")                          # Catalog of datasets, including field descriptions and metadata  
+│   ├── data\_flow\_diagram.drawio        # Draw.io file for the data flow diagram  
+│   ├── sales\_data\_mart.drawio              # Draw.io file for data models (star schema)  
+│   ├── [naming-conventions.md](https://naming-conventions.md "https://naming-conventions.md")            # Consistent naming guidelines for tables, columns, and files  
+│  
+├── scripts/                                                 # SQL scripts for ETL and transformations  
+│   ├── bronze/                         # Scripts for extracting and loading raw data  
+│   ├── silver/                         # Scripts for cleaning and transforming data  
+│   ├── gold/                           # Scripts for creating analytical models  
+│  
+├── tests/                              # Test scripts and quality files  
+  │  
+├── README.md                           # Project overview and instructions  
+├── LICENSE                             # License information for the repository  
+├── .gitignore                          # Files and directories to be ignored by Git  
+└── requirements.txt                    # Dependencies and requirements for the project  
+\`\`\`  
+\---
+
+## License
+
+This project is licensed under the \[MIT License\] (LICENSE). You are free to use, modify and share this project with proper attribution.
 
 ## About Me
 
-Hi! I'm **Cristian Cervantes**. I'm a developing business analyst and yoga practitioner on a mission to share knowledge while simultaneously learning.
+Hi! I'm **Cristian Cervantes**. I'm a developing business analyst and yoga practitioner on a mission to share knowledge while simultaneously learning.
