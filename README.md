@@ -1,17 +1,22 @@
-# sql-eda-bike-project
-Welcome to the **EDA Bike Project** repository!
-  This project demonstrates a comprehensive approach to EDA; from simple tasks dealing with categorical analysis to more complex operations such as part-to-whole analysis, cumulative running averages and product-performance analysis. Designed as a portfolio project that highlights industry best practices for data analysis.
+# README EDA Bike Project
 
----
+## Intro/Welcome
+
+Welcome to the **EDA Bike Project** repository! This project demonstrates a comprehensive approach to EDA; from simple tasks dealing with _categorical analysis_ to more complex operations such as _part-to-whole analysis_, _cumulative running averages_ and _product-performance analysis_. Designed as a portfolio project that highlights industry best practices for data analysis.
+
+<br>
+
 ## **📖 Project Overview**
 
 #### **Objective of Project**
 
 Perform EDA (Exploratory Data Analysis to derive business insights that will be used to ultimately create a business dashboard (in “Third entry: Bike Dashboard Project)\*
 
+<br>
 
 ###### \*Reference “Project Background” section
 
+<br>
 
 #### **Project Specifications**
 
@@ -24,6 +29,7 @@ Data Sources
 
 ###### \*\*Reference “Project Background” section
 
+<br>
 
 Skills Employed
 
@@ -31,6 +37,7 @@ Skills Employed
 - SQL Coding
 - AI Prompt Engineering (for verification purposes)
 
+<br>
 
 ## 🛠️ Project Background
 
@@ -227,6 +234,9 @@ data-warehouse-project/
 
 This project is licensed under the \[MIT License\] (LICENSE). You are free to use, modify and share this project with proper attribution.
 
+## About Me
+
+Hi! I'm **Cristian Cervantes**. I'm a developing business analyst and yoga practitioner on a mission to share knowledge while simultaneously learning.
 ## About Me
 
 Hi! I'm **Cristian Cervantes**. I'm a developing business analyst and yoga practitioner on a mission to share knowledge while simultaneously learning.
