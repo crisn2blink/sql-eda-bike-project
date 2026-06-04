@@ -56,9 +56,10 @@ The aim of all three entries of the Bike Project is to go through the entirety o
 
 ## 🎯 EDA Analysis Breakdown
 
-1. ### **Dimension Exploration:** Understanding the granularity of our dimensions as well as the hierarchical layers.
+1. ### **Dimension Exploration:**
     - Identify the unique values (or categories) in each dimension
     - Recognizing how data might be grouped or segmented, which is useful for later analysis
+    - Understanding the granularity of our dimensions as well as the hierarchical layers
 
 <br>
 
@@ -74,7 +75,7 @@ MIN/MAX \[date dimensions\]
 
 <br>
 
-3. #### **Measure Exploration**
+3. ### **Measure Exploration**
     - Calculate and find out the key metrics of our business (Big Numbers)
     - Highest level of aggregation/lowest level of details
 
