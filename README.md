@@ -56,13 +56,13 @@ The aim of all three entries of the Bike Project is to go through the entirety o
 
 ## 🎯 EDA Analysis Breakdown
 
-1. #### **Dimension Exploration:** Understanding the granularity of our dimensions as well as the hierarchical layers.
+1. ### **Dimension Exploration:** Understanding the granularity of our dimensions as well as the hierarchical layers.
     - Identify the unique values (or categories) in each dimension
     - Recognizing how data might be grouped or segmented, which is useful for later analysis
 
 <br>
 
-2. **Date Exploration**: Find the dates for the range of orders
+2. ### **Date Exploration**: Find the dates for the range of orders
     - Identify the earliest and latest dates (boundaries)
     - Understand the time-span
 
@@ -89,7 +89,7 @@ Examples:
 
 <br>
 
-4. #### **Magnitude Analysis**: Aggregations are performed and then grouped by specific dimensions.
+4. ### **Magnitude Analysis**
     - Here we will start putting things together and really begin our analysis (this is basic).
     - Magnitude analysis is comparing the measure values **by categories**.
     - Helps us to understand the importance of different categories.
@@ -105,7 +105,7 @@ Scenarios:
 
 <br>
 
-5. #### **Ranking Analysis**
+5. ### **Ranking Analysis**
     - Order the values and dimensions by measures
     - Top performers|Bottom performers
 
@@ -120,7 +120,7 @@ Examples:
 
 <br>
 
-6. #### **Change Over Time**  
+6. ### **Change Over Time**  
     - Technique to analyze how a measure evolves over time
     - Helps to track trends and identify seasonality
 
@@ -133,7 +133,7 @@ Scenarios:
 
 <br>
 
-7. #### **Cumulative Analysis**: Running total & Moving Average
+7. ### **Cumulative Analysis**: Running total & Moving Average
     - Used to aggregate the data progressively across time
     - Helps to understand whether our business is growing or declining
     - Very similar to change over time but cumulative
@@ -146,8 +146,8 @@ Case Use:
 
 <br>
 
-8. #### **Performance Analysis (YoY Analysis)**:
-    - #### Process of comparing the current value with a target value. 
+8. ### **Performance Analysis (YoY Analysis)**
+    - Process of comparing the current value with a target value. 
 
 <br>
 
@@ -166,7 +166,7 @@ Scenarios:
 
 <br>
 
-9. #### **Part-to-Whole Analysis**
+9. ### **Part-to-Whole Analysis**
     - Proportional Analysis: Analyze how an individual part is performing compared to the overall, allowing us to understand which category has the greatest impact on the business.
 
 <br>
@@ -184,7 +184,7 @@ Examples:
 
 <br>
 
-10. #### **Data Segmentation Analysis**:
+10. ### **Data Segmentation Analysis**
     - Group the data based on a specific range
     - Helps to understand the correlation between two measures
 
@@ -234,9 +234,6 @@ data-warehouse-project/
 
 This project is licensed under the \[MIT License\] (LICENSE). You are free to use, modify and share this project with proper attribution.
 
-## About Me
-
-Hi! I'm **Cristian Cervantes**. I'm a developing business analyst and yoga practitioner on a mission to share knowledge while simultaneously learning.
 ## About Me
 
 Hi! I'm **Cristian Cervantes**. I'm a developing business analyst and yoga practitioner on a mission to share knowledge while simultaneously learning.
