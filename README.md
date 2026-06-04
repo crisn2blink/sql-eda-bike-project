@@ -208,26 +208,26 @@ Scenarios:
 
 data-warehouse-project/  
 │  
-├── datasets/                                      # Raw datasets used for the project (ERP and CRM data)  
+├── source documents/                                      # Raw datasets used for the project
 │  
-├── docs/                                                      # Project documentation and architecture details  
-│   ├── project\_diagram.drawio             # Draw.io file shows the project's architecture  
-│   ├── [data\_catalog.md](https://data_catalog.md "https://data_catalog.md")                          # Catalog of datasets, including field descriptions and metadata  
-│   ├── data\_flow\_diagram.drawio        # Draw.io file for the data flow diagram  
-│   ├── sales\_data\_mart.drawio              # Draw.io file for data models (star schema)  
-│   ├── [naming-conventions.md](https://naming-conventions.md "https://naming-conventions.md")            # Consistent naming guidelines for tables, columns, and files  
+├── eda scripts/                                           # Individual scripts for all the types EDA used
+│   ├── Part_Whole_analysis.sql              
+│   ├── change_over_time.sql           
+│   ├── cumulative_analysis.sql
+│   ├── data_segmentation_analysis.sql
+│   ├── date_range_exploration.sql
+│   ├── dimensions_exploration.sql
+│   ├── magnitude_analysis.sql
+│   ├── measures_exploration.sql
+│   ├── performance_analysis.sql
+│   ├── ranking_analysis.sql
+
 │  
-├── scripts/                                                 # SQL scripts for ETL and transformations  
-│   ├── bronze/                         # Scripts for extracting and loading raw data  
-│   ├── silver/                         # Scripts for cleaning and transforming data  
-│   ├── gold/                           # Scripts for creating analytical models  
-│  
-├── tests/                              # Test scripts and quality files  
-  │  
-├── README.md                           # Project overview and instructions  
-├── LICENSE                             # License information for the repository  
-├── .gitignore                          # Files and directories to be ignored by Git  
-└── requirements.txt                    # Dependencies and requirements for the project  
+├── view scripts/                                         # SQL scripts for views from which the EDA analysis was performed  
+│   ├── gold.dim_customers 
+│   ├── gold.dim_products
+│   ├── gold.fact_sales
+
 \`\`\`  
 \---
 
