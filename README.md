@@ -45,7 +45,7 @@ This project (Bike EDA Project) conforms one of three entries that make up the o
 
 - First entry: Bike Data Warehouse Project (not included in this repository)
 - Second entry: Bike EDA Project (covered by this repository)
-    - **This entire repository deals with only this first entry**
+    - **This entire repository deals with only this second entry**
 - Third entry: Bike Dashboard Project (not included in this repository/separate repository)
 
 <br>
