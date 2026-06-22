@@ -10,7 +10,7 @@ Welcome to the **EDA Bike Project** repository! This project demonstrates a co
 
 #### **Objective of Project**
 
-Perform EDA (Exploratory Data Analysis to derive business insights that will be used to ultimately create a business dashboard (in “Third entry: Bike Dashboard Project)\*
+Perform EDA (Exploratory Data Analysis) to derive business insights that will be used to ultimately create a business dashboard (in “Third entry: Bike Dashboard Project)\*
 
 <br>
 
@@ -204,6 +204,8 @@ Scenarios:
 
 <br>
 
+THE RESULTS OF THE EDA ARE FOUND UNDER THE "RESULTS" TAB IN THIS REPOSITORY
+
 ## 📂 Repository Structure
 ```
 data-warehouse-project/  
@@ -228,6 +230,8 @@ data-warehouse-project/
 │   ├── gold.dim_products
 │   ├── gold.fact_sales
 
+├── Results/                                              # The overall results for the EDA
+│   ├── Final EDA Results
 ```  
 \---
 
